@@ -16,6 +16,20 @@ class Paczka {
  
 }
 
+let przesylka = {};
+let przesylka2 = {};
+
+const przesylkaJSON = '{"name":"List","ulica":""}'
+const przesylka2JSON = '{"name":"Paczka","ulica":"","waga":20}'
+
+try {
+  przesylka = JSON.parse(przesylkaJSON);
+  przesylka2 = JSON.parse(przesylka2JSON);
+} catch (error) {
+  console.log(error.name);
+  console.log(error.message);
+}
+
 
 
 
@@ -60,7 +74,13 @@ const element2 = document.getElementById("id02");
 
 }
 
+const pies = {
+  imie: "Azor",
+  wiek: 4
+};
 
+const piesJSON = JSON.stringify(pies);
+console.log(piesJSON)
 
 
   
